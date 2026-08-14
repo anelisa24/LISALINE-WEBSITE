@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Urban Textiles - Book a Class</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; line-height: 1.6; text-align: center; }
+        .container { max-width: 600px; margin: auto; padding: 20px; text-align: left; }
+        
+        /* NAV - SAME AS ALL PAGES */
+        nav {
+            background: #eee;
+            padding: 15px;
+            text-align: center;
+        }
+        nav a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: black;
+        }
+        nav a:hover { text-decoration: underline; }
+
+        /* FORM */
+        form label { display: block; margin-top: 15px; font-weight: bold; }
+        form input, form select { 
+            width: 100%; 
+            padding: 10px; 
+            margin: 5px 0 15px; 
+            border: 1px solid #ccc; 
+            box-sizing: border-box;
+        }
+        .btn { 
+            padding: 12px 25px; 
+            border: 1px solid black; 
+            background: white; 
+            cursor: pointer; 
+            font-size: 16px;
+        }
+
+        footer { text-align:center; padding:20px; background:#eee; margin-top:40px; }
+    </style>
+</head>
+<body>
+
+    <!-- NAVIGATION - SAME ON ALL PAGES -->
+    <nav>
+        <a href="index.html">Homepage</a>
+        <a href="about.html">About Us</a>
+        <a href="shop.html">Shop Online</a>
+        <a href="workshops.html">Workshops and Classes</a>
+        <a href="book.html">Book a Class</a>
+        <a href="contact.html">Contact and Location</a>
+    </nav>
+
+    <!-- BOOK A CLASS CONTENT -->
+    <div class="container">
+        <h1 style="text-align:center;">Book a Class</h1>
+        
+        <p>Secure your spot online. You will receive confirmation via email.</p>
+        <p><b>Note:</b> All materials are included for your first class.</p>
+
+        <!-- BOOKING FORM -->
+        <form>
+            <label>Full Name:</label>
+            <input type="text" required>
+
+            <label>Email Address:</label>
+            <input type="email" required>
+
+            <label>Phone Number:</label>
+            <input type="tel" required>
+
+            <label>Class Type:</label>
+            <select required>
+                <option value="">-- Please Select --</option>
+                <option>Beginners Class - 10:00 to 12:00</option>
+                <option>Moderate Learning Class - 14:00 to 16:00</option>
+            </select>
+
+            <label>Preferred Day:</label>
+            <select required>
+                <option value="">-- Please Select --</option>
+                <option>Monday</option>
+                <option>Tuesday</option>
+                <option>Wednesday</option>
+                <option>Thursday</option>
+                <option>Friday</option>
+                <option>Saturday</option>
+            </select>
+
+            <label>Preferred Date:</label>
+            <input type="date" required>
+
+            <div style="text-align:center;">
+                <button type="submit" class="btn">Book Now</button>
+            </div>
+        </form>
+    </div>
+
+    <!-- FOOTER - SAME AS ALL PAGES -->
+    <footer>
+        <p>&copy; 2026 Urban Textiles </p>
+    </footer>
+
+</body>
+</html>

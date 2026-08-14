@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Urban Textiles - Shop Online</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; line-height: 1.6; text-align: center; }
+        .container { max-width: 900px; margin: auto; padding: 20px; }
+        
+        /* NAV - SAME AS ALL PAGES */
+        nav {
+            background: #eee;
+            padding: 15px;
+        }
+        nav a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: black;
+        }
+        nav a:hover { text-decoration: underline; }
+
+        /* PRODUCT GRID */
+        .grid { 
+            display: grid; 
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
+            gap: 20px; 
+            margin-top: 30px;
+        }
+        .card { 
+            border: 1px solid #ccc; 
+            padding: 15px; 
+            text-align: center; 
+        }
+        .card img { 
+            width: 100%; 
+            height: 200px; 
+            object-fit: cover; 
+        }
+
+        .btn { 
+            padding: 8px 15px; 
+            border: 1px solid black; 
+            background: white; 
+            text-decoration: none; 
+            color: black; 
+            display: inline-block; 
+            margin-top: 10px;
+        }
+
+        footer { text-align:center; padding:20px; background:#eee; margin-top:40px; }
+    </style>
+</head>
+<body>
+
+    <!-- NAVIGATION - SAME ON ALL PAGES -->
+    <nav>
+        <a href="index.html">Homepage</a>
+        <a href="about.html">About Us</a>
+        <a href="shop.html">Shop Online</a>
+        <a href="workshops.html">Workshops and Classes</a>
+        <a href="book.html">Book a Class</a>
+        <a href="contact.html">Contact and Location</a>
+    </nav>
+
+    <!-- SHOP CONTENT -->
+    <div class="container">
+        <h1>Shop Online</h1>
+        <p><b>Free shipping</b> on orders over R800</p>
+        <p><b>Payment Options:</b> Credit/Debit Card, EFT, Pay on Delivery in Durban</p>
+
+        <!-- PRODUCTS -->
+        <div class="grid">
+            <div class="card">
+                <img src="pictures Lisasline/cover image.webp" alt="Cotton Fabric">
+                <h3>Premium Cotton</h3>
+                <p>R120 per meter</p>
+                <a href="#" class="btn">Add to Cart</a>
+            </div>
+            
+            <div class="card">
+                <img src="pictures Lisasline/real dress pattern.jpg" alt="Sewing Pattern">
+                <h3>Dress Pattern Pack</h3>
+                <p>R85.00</p>
+                <a href="#" class="btn">Add to Cart</a>
+            </div>
+            
+            <div class="card">
+                <img src="pictures Lisasline/just fabrics.jpg" alt="Sewing Accessories">
+                <h3>Notions Kit</h3>
+                <p>R250.00</p>
+                <a href="#" class="btn">Add to Cart</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- FOOTER - SAME AS ALL PAGES -->
+    <footer>
+        <p>&copy; 2026 Urban Textiles </p>
+    </footer>
+
+</body>
+</html>
